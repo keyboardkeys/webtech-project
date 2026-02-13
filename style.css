@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 200%;
+}
+
+.main-header__color-change {
+  padding: 10px;
+}
