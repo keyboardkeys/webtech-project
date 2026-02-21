@@ -5,7 +5,7 @@
   --primary-color-100: #3851be;
 
   --accent-color-400: #f2c700;
-  --accent-color-100: #f2cf31;
+  --accent-color-100: #f2cf3195;
 
   --neutral-color-900: #000000;
   --neutral-color-100: #ffffff;
@@ -36,6 +36,8 @@
 
 /* CSS RESET */
 
+/* // https://piccalil.li/blog/a-msodern-css-reset */
+
 /* Box sizing rules */
 *,
 *::before,
@@ -63,7 +65,7 @@ html:focus-within {
 
 html,
 body {
-  min-height: 100%;
+  height: 100%;
 }
 
 /* Set core body defaults */
@@ -75,6 +77,11 @@ body {
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--neutral-color-100);
 }
 
 /* Make images easier to work with */
@@ -130,27 +137,27 @@ video {
 }
 
 .bg-primary-400 {
-  color: var(--primary-color-400);
+  background-color: var(--primary-color-400);
 }
 
 .bg-primary-100 {
-  color: var(--primary-color-100);
+  background-color: var(--primary-color-100);
 }
 
 .bg-accent-400 {
-  color: var(--accent-color-400);
+  background-color: var(--accent-color-400);
 }
 
 .bg-accent-100 {
-  color: var(--accent-color-100);
+  background-color: var(--accent-color-100);
 }
 
 .bg-neutral-900 {
-  color: var(--neutral-color-900);
+  background-color: var(--neutral-color-900);
 }
 
 .bg-neutral-100 {
-  color: var(--neutral-color-100);
+  background-color: var(--neutral-color-100);
 }
 
 .fw-bold {
@@ -176,23 +183,195 @@ video {
 .fs-300 {
   font-size: var(--fs-300);
 }
+
 .fs-400 {
   font-size: var(--fs-400);
 }
+
 .fs-500 {
   font-size: var(--fs-500);
 }
+
 .fs-600 {
   font-size: var(--fs-600);
 }
+
 .fs-700 {
   font-size: var(--fs-700);
 }
+
 .fs-800 {
   font-size: var(--fs-800);
 }
+
 .fs-900 {
   font-size: var(--fs-900);
 }
 
 /* General style */
+
+/* Header section */
+
+.container {
+  font-family: var(--font-family-primary);
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  max-width: 1280px;
+}
+
+.button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  width: 7rem;
+  font-size: var(--fs-button);
+  cursor: pointer;
+}
+
+.main-header {
+  background-color: white;
+  z-index: 1000;
+  /* height: 10rem; */
+}
+
+/* DONT TOUCH LOGO*/
+
+.main-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 10%;
+  /* height: 5rem; */
+  width: 100%;
+}
+
+.main-header__top .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.logo-text h1 {
+  font-size: 24px;
+  color: #253475;
+  letter-spacing: 1px;
+  font-weight: var(--fw-bold);
+}
+
+.logo-text p {
+  font-size: 14px;
+  color: #666;
+  letter-spacing: 4px;
+  border-top: 1px solid #ccc;
+}
+
+/* DONT TOUCH LOGO END*/
+
+.main-header__menu {
+  display: block;
+  width: 100%;
+  /* position: fixed; */
+  top: 5rem;
+  bottom: 0px;
+
+  /* overflow: unset; */
+  height: 3.5rem;
+  /* height: fit-content; */
+}
+
+.logo {
+  height: inherit;
+}
+
+.active,
+.main-nav > li:hover > a {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+.main-nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--fs-300);
+  font-size: 13px;
+}
+
+.main-nav a {
+  padding: 0.2rem 1.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  transition: color 0.4s;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav > li {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.main-header__dropdown:hover .menu__submenu {
+  display: block;
+}
+
+.menu__submenu {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  background-color: #26336e;
+  opacity: 0.9;
+  min-width: 260px;
+  list-style: none;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.menu__submenu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu__submenu li a {
+  padding: 15px 20px;
+  display: block;
+  height: auto;
+  border-bottom: none !important;
+}
+
+.menu__submenu li a:hover {
+  background-color: #253475;
+  color: white;
+}
+
+.fa-solid,
+.fa-chevron-down,
+.icon {
+  margin-left: 4px;
+}
+
+.button-cta {
+  font-weight: var(--fw-semi-bold);
+}
