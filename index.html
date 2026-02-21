@@ -9,25 +9,63 @@
   </head>
 
   <body>
-    <header class="main-header">
-      <div class="small-banner"></div>
-      <a href="#">
-        <img src="./images/logo-ncst.png" alt="Logo" height="250">
-      </a>
-      <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Admission</a></li>
-          <li><a href="#">Academics</a></li>
-          <li><a href="#">Campus</a></li>
-          <li><a href="#">Scholarship</a></li>
-          <li><a href="#">Global</a></li>
-          <li><a href="#">Portals</a></li>
-        </ul>
-      </nav>
-      <button class="button">Contact Us</button>
-    </header>
+    <header class="main-header bg-neutral-100">
 
+      <!-- DONT TOUCH PABABA -->
+      <div class="main-header__top">
+        <div class="container">
+          <div class="main-header__logo-container">
+            <img src="./images/logo-ncst.png" alt="Logo" class="logo-img">
+            <div class="logo-text">
+              <h1>NATIONAL COLLEGE OF SCIENCE AND TECHNOLOGY</h1>
+              <p>NCST EDUCATION SYSTEM</p>
+            </div>
+          </div>
+          <button class="button button-cta bg-accent-400 ">Contact Us</button>
+        </div>
+      </div>
+
+      <nav class="main-header__menu bg-primary-400">
+        <div class="container">
+          <ul class="main-nav text-neutral-900" role="list">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <!-- <li><a href="#">Admission</a></li> -->
+
+            <li class="main-header__dropdown">
+              <a href="#" class="menu">Admission<i
+                  class="fa-solid fa-chevron-down icon"></i></a>
+              <ul class="menu__submenu" role="list">
+                <li><a href="#">Incoming Senior High School</a></li>
+                <li><a href="#">College Freshmen</a></li>
+                <li><a href="#">Transferees</a></li>
+              </ul>
+            </li>
+
+            <li class="main-header__dropdown">
+              <a href="#" class="menu">Academics <i
+                  class="fa-solid fa-chevron-down icon"></i></a>
+              <ul class="menu__submenu" role="list">
+                <li><a href="#">Basic Education</a></li>
+                <li><a href="#">College Programs</a></li>
+                <li><a href="#">Graduate School</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Campus</a></li>
+            <li><a href="#">Scholarship</a></li>
+            <li><a href="#">Global</a></li>
+            <li><a href="#">Portals</a></li>
+            <li><a href="#">Events</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+    </header>
+  
+    
+    
+    <script src="https://kit.fontawesome.com/e5b67dc63a.js"
+      crossorigin="anonymous"></script>
     <script src="./main.js"></script>
   </body>
 
