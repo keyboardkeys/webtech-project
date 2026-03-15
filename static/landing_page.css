@@ -1,0 +1,165 @@
+/* @import url(./style.css); */
+
+/* MAIN */
+.wrapper {
+  position: relative;
+  height: 60rem;
+}
+
+.main__background {
+  background-image: url("../images/ncst-founding.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  inset: 0px;
+  z-index: -1;
+  height: 100%;
+}
+
+/* CARDS - MAIN */
+.cards-section {
+  background-color: var(--primary-color-400);
+}
+
+ul.cards-showcase {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  gap: 8px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22rem;
+  padding: 35px 15px;
+  border: 1px solid white;
+  flex: 1 1 0;
+}
+
+.card__inner {
+  text-align: center;
+}
+/* Card color to pababa */
+/* Connected sa card__iner */
+.card:nth-child(odd) {
+  background-color: var(--primary-color-300);
+}
+
+.card:nth-child(even) {
+  background-color: var(--accent-color-100);
+}
+
+.card__icon-wrapper {
+  display: flex;
+  border-radius: 50%;
+  width: 4.2rem;
+  height: 4.2rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* !! Change din name nito mamaya */
+/* Connected to sa may card__icon-wrap */
+.card__icon-wrapper--accent {
+  background-color: var(--accent-color-100);
+}
+
+.card__icon-wrapper--primary {
+  background-color: var(--neutral-color-100);
+}
+
+.card__content {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__content--dark {
+  color: var(--neutral-color-900);
+}
+
+.card__content--light {
+  color: var(--neutral-color-100);
+}
+
+.card__title {
+  font-weight: var(--fw-semi-bold);
+  font-size: var(--fs-400);
+  text-decoration: underline;
+}
+
+.card__description {
+  font-size: var(--fs-400);
+  margin: 20px 0px;
+  padding: 0 20px;
+}
+
+.button--primary {
+  background-color: var(--neutral-color-100);
+  color: var(--neutral-color-900);
+}
+
+.button--secondary {
+  background-color: var(--accent-color-100);
+  color: var(--neutral-color-900);
+}
+
+.button--with-icon {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: var(--fs-400);
+}
+
+/* VALUES */
+
+.values {
+  display: flex;
+  width: 100%;
+  font-weight: 900;
+  text-align: center;
+}
+
+.values__item {
+  font-family: var(--font-family-primary);
+  font-weight: var(--fw-bold);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-500);
+  letter-spacing: 1px;
+  height: 3rem;
+  line-height: 1.5;
+}
+
+.values--makadiyos {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.values--makabayan {
+  background-color: #253475;
+  color: #fff2d1;
+}
+
+.values--makatao {
+  background-color: #bd1f2d;
+  color: #fff2d1;
+}
+
+.values--makakalikasan {
+  background-color: #fdc622;
+  color: #000000;
+}
+
+/* SPECIAL */
+.main__background {
+  margin-top: 50px;
+}

@@ -4,14 +4,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - NCST Education System</title>
-    <link rel="shortcut icon" href="./images/ncst16x16.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./static/header.css">
-    <link rel="stylesheet" href="./static/landing_page.css">
-    <link rel="stylesheet" href="./static/form.css">
-    <link rel="stylesheet" href="./static/footer.css">
-    <link rel="stylesheet" href="./static/style.css">
-    <!-- <link rel="stylesheet" href="./static/responsive_homepage.css"> -->
+    <title>Campus - NCST Education System</title>
+    <link rel="shortcut icon" href="../images/ncst16x16.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/header.css">
+    <link rel="stylesheet" href="../static/landing_page.css">
+    <link rel="stylesheet" href="../static/footer.css">
+    <link rel="stylesheet" href="../static/form.css">
   </head>
 
   <body>
@@ -24,7 +23,7 @@
 
           <!-- Logo ng header -->
           <div class="logo">
-            <img src="./images/logo-ncst.png" alt="NCST Logo" class="logo__img">
+            <img src="../images/logo-ncst.png" alt="NCST Logo" class="logo__img">
             <div class="logo__text">
               <h1 class="logo__title">NATIONAL COLLEGE OF SCIENCE AND TECHNOLOGY
               </h1>
@@ -43,34 +42,33 @@
         <div class="navbar__container container">
           <ul class="navbar__menu" role="list">
             <li class="navbar__item">
-              <a href="./index.html"
-                class="navbar__link navbar__link--active">Home</a>
+              <a href="../index.html"
+                class="navbar__link ">Home</a>
             </li>
 
             <li class="navbar__item">
-              <a href="./routes/about_us.html" class="navbar__link">About Us</a>
+              <a href="./about_us.html" class="navbar__link ">About Us</a>
             </li>
 
             <!-- Dropdown menu -->
             <li class="navbar__item navbar__item--dropdown">
-              <a href="./routes/admission.html"
-                class="navbar__link navbar__link--dropdown">Admission
+              <a href="./admission.html" class="navbar__link navbar__link--dropdown ">Admission
                 <i class="fa-solid fa-chevron-down icon"></i>
               </a>
 
               <!-- Submenu block -->
               <ul class="dropdown" role="list">
                 <li class="dropdown__item">
-                  <a href="./routes/senior_high.html"
+                  <a href="./senior_high.html"
                     class="dropdown__link">Incoming Senior High
                     School</a>
                 </li>
                 <li class="dropdown__item">
-                  <a href="./routes/college_freshmen"
+                  <a href="./college_freshmen"
                     class="dropdown__link">College Freshmen</a>
                 </li>
                 <li class="dropdown__item">
-                  <a href="./routes/trasnferees"
+                  <a href="./trasnferees"
                     class="dropdown__link">Transferees</a>
                 </li>
               </ul>
@@ -78,22 +76,21 @@
 
             <!-- Dropdown menu -->
             <li class="navbar__item navbar__item--dropdown">
-              <a href="./routes/academics.html"
-                class="navbar__link navbar__link--dropdown">Academics
+              <a href="./academics.html" class="navbar__link navbar__link--dropdown ">Academics
                 <i class="fa-solid fa-chevron-down icon"></i></a>
 
               <!-- Submenu block -->
               <ul class="dropdown" role="list">
                 <li class="dropdown__item">
-                  <a href="./routes/basic_education"
+                  <a href="./basic_education"
                     class="dropdown__link">Basic Education</a>
                 </li>
                 <li class="dropdown__item">
-                  <a href="./routes/college_programs"
+                  <a href="./college_programs"
                     class="dropdown__link">College Programs</a>
                 </li>
                 <li class="dropdown__item">
-                  <a href="./routes/graduate_school"
+                  <a href="./graduate_school"
                     class="dropdown__link">Graduate School</a>
                 </li>
               </ul>
@@ -101,20 +98,20 @@
 
             <!-- Regular nav items -->
             <li class="navbar__item">
-              <a href="./routes/campus.html" class="navbar__link">Campus</a>
+              <a href="./campus.html" class="navbar__link navbar__link--active">Campus</a>
             </li>
             <li class="navbar__item">
-              <a href="./routes/scholarship.html"
+              <a href="./scholarship.html"
                 class="navbar__link">Scholarship</a>
             </li>
             <li class="navbar__item">
-              <a href="./routes/global.html" class="navbar__link">Global</a>
+              <a href="./global.html" class="navbar__link">Global</a>
             </li>
             <li class="navbar__item">
-              <a href="./routes/portals.html" class="navbar__link">Portals</a>
+              <a href="./portals.html" class="navbar__link">Portals</a>
             </li>
             <li class="navbar__item">
-              <a href="./routes/events.html" class="navbar__link">Events</a>
+              <a href="./events.html" class="navbar__link">Events</a>
             </li>
           </ul>
         </div>
@@ -125,7 +122,7 @@
     <!-- Main Content dito -->
     <main> <!-- CONTENT DITO -->
       <div class="wrapper">
-        <div class="main__background"></div>
+        <div class="main_background__small"></div>
       </div>
 
       <!-- FORM -->
@@ -171,127 +168,8 @@
       </div>
 
       <!-- Cards section -->
-      <section class="cards-section">
+      
 
-        <!-- Card showcase -->
-        <ul role="list" class="cards-showcase container">
-
-          <!-- Card 1 -->
-          <li role="list" class="card card--accent">
-            <div class="card__inner">
-              <div class="card__icon-wrapper card__icon-wrapper--accent">
-                <img src="./images/graduation_cap.png" alt="Graduation">
-              </div>
-
-              <div class="card__content card__content--light">
-                <h2 class="card__title">QUALITY EDUCATION
-                </h2>
-                <p class="card__description">World-class
-                  education for everyone
-                </p>
-
-                <div class="card__actions">
-                  <a href="#"
-                    class="button button--secondary button--with-icon">Explore
-                    all courses
-                    <i class="fa-solid fa-chevron-right icon">
-                    </i>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </li>
-
-          <!-- Card 2 -->
-          <li role="list" class="card card--primary">
-            <div class="card__inner">
-              <div class="card__icon-wrapper card__icon-wrapper--primary">
-                <img src="./images/registration-white.png" alt="Registration"
-                  class="card__image">
-              </div>
-
-
-              <div class="card__content card__content--dark">
-                <h2 class="card__title">ADMISSION</h2>
-                <p class="card__description">Take part in
-                  becoming a Nation
-                  Builder
-                </p>
-                <div class="card__actions">
-                  <a href="#"
-                    class="button button--primary button--with-icon">Enroll now
-                    <i class="fa-solid fa-chevron-right icon ">
-                    </i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <!-- Card 3 -->
-          <li role="list" class="card card--accent">
-            <div class="card__inner">
-
-              <div class="card__icon-wrapper card__icon-wrapper--accent">
-                <img src="./images/location-green.png" alt="Location">
-              </div>
-
-              <div class="card__content card__content--light">
-
-                <h2 class="card__title">ACCESSIBLE &amp;
-                  AFFORDABLE</h2>
-                <p class="card__description">Everyone deserves
-                  education however
-                  and whenever
-                </p>
-
-                <div class="card__actions">
-                  <a href="#"
-                    class="button button--secondary button--with-icon">Apply for
-                    scholarship
-                    <i class="fa-solid fa-chevron-right icon">
-                    </i>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </li>
-
-          <!-- Card 4 -->
-          <li role="list" class="card">
-            <div class="card__inner">
-              <div class="card__icon-wrapper card__icon-wrapper--primary">
-                <img src="./images/students.png" alt="Students">
-              </div>
-              <div class="card__content card__content--dark">
-                <h2 class="card__title">STUDENT LIFE</h2>
-                <p class="card__description">Check out NCST education privilege
-                </p>
-                <div class="card__actions">
-                  <a href="#"
-                    class="button button--primary button--with-icon">Find out
-                    more
-                    <i class="fa-solid fa-chevron-right icon">
-                    </i>
-                  </a>
-                </div>
-
-              </div>
-            </div>
-          </li>
-
-        </ul>
-
-      </section>
-
-      <div class="values">
-        <div class="values__item values--makadiyos">MAKADIYOS</div>
-        <div class="values__item values--makabayan">MAKABAYAN</div>
-        <div class="values__item values--makatao">MAKATAO</div>
-        <div class="values__item values--makakalikasan">MAKAKALIKASAN</div>
-      </div>
     </main>
 
     <footer class="footer">
@@ -303,7 +181,7 @@
 
             <!-- Logo ng footer -->
             <div class="footer-top">
-              <img src="./images/logo-ncst.png" alt="NCST Logo"
+              <img src="../images/logo-ncst.png" alt="NCST Logo"
                 class="footer-top__img">
               <h2 class="footer__title">NATIONAL COLLEGE OF SCIENCE AND
                 TECHNOLOGY</h2>
@@ -323,19 +201,19 @@
             <p class="footer__text">Follow us on our official social media
               account:</p>
             <ul role="list" class="social-links">
-              <li><a href="#" class="social-links__item">
+              <li><a href="https://www.facebook.com/NCST.OfficialPage" class="social-links__item">
                   <i class="fa-brands fa-facebook"></i>
                 </a></li>
-              <li><a href="#" class="social-links__item">
+              <li><a href="https://www.tiktok.com/@ncstofficial" class="social-links__item">
                   <i class="fa-brands fa-tiktok"></i>
                 </a></li>
-              <li><a href="#" class="social-links__item">
+              <li><a href="https://www.instagram.com/ncstofficial" class="social-links__item">
                   <i class="fa-brands fa-instagram"></i>
                 </a></li>
-              <li><a href="#" class="social-links__item">
+              <li><a href="https://x.com/NCSTOFFICIAL" class="social-links__item">
                   <i class="fa-brands fa-twitter"></i>
                 </a></li>
-              <li><a href="#" class="social-links__item">
+              <li><a href="https://www.youtube.com/@NCSTEducationSystemChannel" class="social-links__item">
                   <i class="fa-brands fa-youtube"></i>
                 </a></li>
             </ul>
@@ -363,9 +241,9 @@
     <script src="https://kit.fontawesome.com/e5b67dc63a.js"
       crossorigin="anonymous"></script>
 
-    <script src="header_form.js"></script>
+    <script src="../header_form.js"></script>
 
-
+    
 
   </body>
 

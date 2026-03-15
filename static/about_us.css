@@ -1,0 +1,323 @@
+
+
+/*Historical Background and Mission Vision */
+.container1 {
+  display: flex;
+  min-height: 95vh;
+}
+
+/* Left Sidebar */
+.sidebar1 {
+  flex: 1; 
+  background-color: #1a2a6c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.title1 {
+  font-family: 'Serif', Georgia, serif; 
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+/* Right Content Area */
+.content1 {
+  flex: 1.5; 
+  background-color: #1a2a6c; 
+  color: white;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.text1 {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  max-width: 800px; 
+  font-family: sans-serif;
+  padding-left: 100px;
+  
+}
+
+
+
+
+
+
+
+
+:root {
+  --prime-emerald2: #1a2a6c;
+  --onyx-text2: #1a1a1a;
+  --glide-speed2: 0.45s;
+}
+
+.vantage-grid2 {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 40px;
+}
+
+.vantage-tile2 {
+  flex: 1;
+  padding: 50px 30px;
+  position: relative;
+  cursor: pointer;
+  border-left: 1px solid #f0f0f0;
+  overflow: hidden;
+  
+  /* Create the bottom-to-top fill effect */
+  background: linear-gradient(to bottom, transparent 50%, var(--prime-emerald2) 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position var(--glide-speed2) ease-in-out;
+}
+
+.vantage-tile2:first-child {
+  border-left: none;
+}
+
+.vantage-inner2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 220px;
+}
+
+.vantage-count2 {
+  font-size: 3.5rem;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--prime-emerald2);
+  transition: color var(--glide-speed2);
+}
+
+.vantage-desc2 {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--onyx-text2);
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: color var(--glide-speed2);
+}
+
+/* Hover & Active Styles: Slides background UP */
+.vantage-tile2:hover, 
+.vantage-tile2.active-state2 {
+  background-position: bottom;
+}
+
+/* Change text to white when the green background slides up */
+.vantage-tile2:hover .vantage-count2, 
+.vantage-tile2.active-state2 .vantage-count2,
+.vantage-tile2:hover .vantage-desc2,
+.vantage-tile2.active-state2 .vantage-desc2 {
+  color: #ffffff;
+}
+
+strong {
+  color: #fdc622;
+  font-size: 1.07rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.value-description {
+  flex: 1;
+  font-size: 1.05rem;
+  color: #555;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Container Fixes --- */
+.history-container {
+    margin: 0; 
+    width: 100%;
+    max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.page-header {
+    background-color: #1a2a6c; /* Deep Navy from image */
+    padding: 20px 40px;
+    width: 100%;
+    box-sizing: border-box; /* Keeps padding inside the 100% width */
+}
+
+/* Ensure the H1 stays white and flush */
+.page-header h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.core-values {
+    width: 100%;
+    max-width: 100%; /* Forces the white background to fill the screen */
+    background: #fff;
+}
+
+/* --- Content Layout --- */
+.value-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px; /* Horizontal padding matches the header */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Left side: Shield and Title */
+.value-identity {
+    flex: 0 0 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shield-img {
+    width: 180px;
+    height: auto;
+}
+
+.value-name {
+    color: #1a2a6c;
+    font-size: 1.6rem;
+    margin: 10px 0 0 0;
+    letter-spacing: 1px;
+    font-weight: bold; /* Replaced variable with standard bold */
+}
+
+.value-subtitle {
+    color: #1a2a6c;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-top: 2px solid #1a2a6c;
+    display: inline-block;
+    padding-top: 2px;
+    margin-top: 0;
+}
+
+/* Right side: Text - This now fills the remainder of the screen */
+.value-description {
+    flex: 1;
+    font-size: 1.5rem;
+    color: #000000;
+    text-align: justify;
+}
+
+.value-description p {
+    margin: 0;
+}
+
+/* Divider Line */
+.divider {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 0 40px; /* Aligned with side padding */
+}
+
+/* --- Additional styles from your provided code --- */
+.stat-highlight {
+    background-color: #eef2ff;
+    border-left: 5px solid #0d215b;
+    padding: 20px;
+    margin: 10px 0;
+    font-style: italic;
+    color: #2c3e50;
+}
+
+.history-block p {
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+    color: #555;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg {
+  height: 33.5rem;
+  position: relative;
+  margin-top: 5.35rem;
+}
+.background {
+  background-image: url("../images/ncst_img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  inset: 0px;
+  z-index: 0;
+  height: 100%;
+  background-size: cover;
+}
+
+.bg-elem {
+  display: flex;
+  font-family: serif;
+  color: white;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 40px;
+}
+
+.bg-title {
+  font-size: 4rem;
+  width: 75rem;
+}
+
+.bg-text {
+  width: 76.65rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+

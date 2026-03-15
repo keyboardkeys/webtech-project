@@ -1,0 +1,33 @@
+/* 360px width lowest phone */
+/* 640px height lowest phone */
+/* TABLET FIRST */
+
+/* Break at 1145px width kasi nassisira footer */
+@media screen and (max-width: 1200px) {
+  .logo__img {
+    height: 50px;
+  }
+
+  .logo__title {
+    font-size: 20px;
+  }
+
+  .logo__subtitle {
+    font-size: 12px;
+  }
+
+  .cards-section {
+    text-align: center;
+    /* padding: 100px 5px; */
+    background-color: var(--primary-color-400);
+    height: 100%;
+  }
+
+  .cards-showcase {
+    /* width: 40%; */
+    flex-direction: column;
+    gap: 1px;
+    flex-wrap: wrap;
+    height: 200rem;
+  }
+}
